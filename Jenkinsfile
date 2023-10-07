@@ -5,7 +5,7 @@ pipeline {
         }
     }
     options {
-        ansicolor('xterm')
+        ansiColor('xterm')
     }
 
     stages {
