@@ -19,7 +19,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying....'
-                // Place the appropriate deployment steps here
+                echo 'failed'
             }
         }
     }
