@@ -19,6 +19,18 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying....'
+                echo 'failed'
+            }
+        }
+        post {
+            always {
+                echo 'always'
+            }
+            success {
+                echo 'i will run when sucess'
+            }
+            failure {
+                echo 'i will run when failure'
             }
         }
     }
