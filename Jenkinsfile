@@ -4,6 +4,9 @@ pipeline {
             label 'AGENT-1'
         }
     }
+    options {
+        ansicolor('xterm')
+    }
 
     stages {
         stage('Build') {
