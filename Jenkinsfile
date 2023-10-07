@@ -9,9 +9,14 @@ pipeline {
     }
 
     stages {
-        stage('Build') {
+        stage('init') {
             steps {
-                echo 'Building..'
+                sh '''
+                cd 01-vpc
+                ls -ltr
+                pwd
+                terraform init
+                '''
             }
         }
         stage('Test') {
